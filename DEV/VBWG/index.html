@@ -43,17 +43,17 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art=""></canvas>
-		<script src="Build/VBWG.loader.js"></script>
+		<script src="Build/Client-WebGL.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/VBWG.data.unityweb",
-				frameworkUrl: "Build/VBWG.framework.js.unityweb",
-				codeUrl: "Build/VBWG.wasm.unityweb",
+				dataUrl: "Build/Client-WebGL.data",
+				frameworkUrl: "Build/Client-WebGL.framework.js",
+				codeUrl: "Build/Client-WebGL.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "vibie",
 				productName: "vibie -carrot-game",
-				productVersion: "0.0.1",
+				productVersion: "1.0",
 			};
 			var scaleToFit;
 			try {
